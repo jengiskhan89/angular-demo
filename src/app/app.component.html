@@ -11,6 +11,8 @@
     ID{{item.id}}-----{{item.name}}
   </li>
 </ul>
-<app-product-detail *ngIf="selectedProduct" [product] = "selectedProduct"></app-product-detail>
-
+<app-product-detail *ngIf="selectedProduct" [product] = "selectedProduct" [title]= "selectedProduct.name" (bookEvent)="getProduct($event)"></app-product-detail>
+<div *ngIf="message">
+  <h2>{{message}} done</h2>
+</div>
 <router-outlet></router-outlet>
