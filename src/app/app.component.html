@@ -15,4 +15,5 @@
 <div *ngIf="message">
   <h2>{{message}} done</h2>
 </div>
+<app-button [setting]= "styleColor" (clickEvent)="showResult($event)"></app-button>
 <router-outlet></router-outlet>
