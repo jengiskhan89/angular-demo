@@ -1,0 +1,82 @@
+// .mat-button, .mat-raised-button{
+//     background-color:red;
+//     font-size: 42px;
+// }
+$primary-default: #0F9AB5;
+$primary-hover: #006c85;
+$primary-focused: #12b9d9;
+$primary-pressed: #074d5a;
+$primary-disabled: #dbeff4;
+$primary-text-color: #fff;
+$outline-text-color: #000;
+$outline-default: #ffffff;
+$large-size: 40px;
+$medium-size: 32px;
+$small-size: 24px;
+$outline-hover: #DBEFF4;
+$outline-focus: #DBEFF4;
+// .mat-button {
+//   color: $button-code-color;
+// }
+button {
+    &.btn-primary {
+        color: $primary-text-color;
+        background-color: $primary-default;
+        &:hover {
+            background-color: $primary-hover
+        }
+        &:focus {
+            background-color: $primary-focused
+        }
+        // &.active {
+        //     background-color: $primary-pressed;
+        // }
+        &.btn-lg {
+           line-height: $large-size;
+        }
+        &.btn-md {
+            line-height: $medium-size;
+        }
+        &.btn-sm {
+            line-height: $small-size;
+        }
+        &.btn-disabled {
+            background-color: $primary-disabled;
+        cursor: not-allowed;
+        color: $primary-text-color;
+      }
+    }
+    &.btn-outline {
+        color: $outline-text-color;
+        background-color: $outline-default;
+        border: 1px solid #C6CACC;
+        &:hover {
+            background-color: $outline-hover;
+            border: 1px solid #0F9AB5;
+        }
+        &:focus {
+            background-color: #FFFFFF;
+            border: 1px solid #0F9AB5;
+        }
+        &.btn-lg {
+            line-height: $large-size;
+         }
+         &.btn-md {
+             line-height: $medium-size;
+         }
+         &.btn-sm {
+             line-height: $small-size;
+         }
+        &.btn-disabled {
+            background: #F1F3F4;
+            border: 1px solid #C6CACC;
+            cursor: not-allowed;
+        }
+       
+    }
+    &.btn-dashed {
+        border-style:dashed;
+        border-width: 1px;
+    }
+   
+}
