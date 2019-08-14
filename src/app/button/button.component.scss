@@ -15,10 +15,12 @@ $medium-size: 32px;
 $small-size: 24px;
 $outline-hover: #DBEFF4;
 $outline-focus: #DBEFF4;
+
 // .mat-button {
 //   color: $button-code-color;
 // }
 button {
+    margin: 0 10px;
     &.btn-primary {
         color: $primary-text-color;
         background-color: $primary-default;
@@ -33,6 +35,9 @@ button {
         // }
         &.btn-lg {
            line-height: $large-size;
+           &.btn-square {
+               width: 40px;
+           }
         }
         &.btn-md {
             line-height: $medium-size;
@@ -41,7 +46,7 @@ button {
             line-height: $small-size;
         }
         &.btn-disabled {
-            background-color: $primary-disabled;
+        background-color: $primary-disabled;
         cursor: not-allowed;
         color: $primary-text-color;
       }
@@ -76,7 +81,46 @@ button {
     }
     &.btn-dashed {
         border-style:dashed;
-        border-width: 1px;
+        border-width: 0.5px;
+        &:hover {
+            background-color: #FFFFFF;
+            // border: 1px solid #0F9AB5;
+            border-color:  #0F9AB5; 
+        }
+        &:focus {
+            background-color: #FFFFFF;
+            border-color: #074d5a;
+            color:#074d5a;
+        }
+        &.btn-lg {
+            line-height: $large-size;
+         }
+         &.btn-md {
+             line-height: $medium-size;
+         }
+         &.btn-sm {
+             line-height: $small-size;
+         }
+        &.btn-disabled {
+            background: #F1F3F4;
+            border-color:  #C6CACC;
+            cursor: not-allowed;
+        }
     }
    
+}
+mat-icon {
+    &.lg-icon {
+        font-size: 24px;
+        text-align: center
+    }
+    &.md-icon {
+        font-size: 20px;
+        line-height: 23px
+    }
+    &.sm-icon {
+        font-size: 16px;
+        line-height: 23px
+    }
+    
 }
